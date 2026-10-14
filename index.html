@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daksh Mamnani's personal website. A little about me, my hobbies, and my projects.">
+  <title>Daksh Mamnani | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="index.html">daksh.</a>
+      <div class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <button id="themeButton" type="button">Light mode</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">YO, WHAT'S GOOD</p>
+      <h1>I'm Daksh Mamnani.</h1>
+      <p>I'm a freshman at UC Berkeley. When I'm not busy with classes, I'm probably hooping, hitting the gym, or cutting somebody's hair. Just out here trying new things and enjoying college.</p>
+      <a class="main-button" href="projects.html">Check out my projects</a>
+    </section>
+
+    <section class="section" id="hobbies">
+      <h2>Stuff I'm into</h2>
+      <p class="section-intro">A few things I spend my free time doing.</p>
+      <ul class="hobby-list">
+        <li>Playing basketball with the boys</li>
+        <li>Going to the gym</li>
+        <li>Giving haircuts and getting better at fades</li>
+      </ul>
+      <div class="card-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=900&q=80" alt="Basketball hoop on a court">
+          <div class="card-text"><h3>Basketball</h3><p>Always down to run some pickup. It's even better when the whole squad pulls up.</p></div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80" alt="Weights at a gym">
+          <div class="card-text"><h3>Gym</h3><p>Love getting a lift in. It's one of my favorite ways to reset after class.</p></div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=80" alt="Barber tools and haircut station">
+          <div class="card-text"><h3>Haircuts</h3><p>I also cut hair. Still learning new stuff, but a clean fade is always satisfying.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <h2>Say what's up</h2>
+      <p class="section-intro">Got something to say? Drop a message below.</p>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="What's good?" required></textarea>
+        <button class="main-button" type="submit">Send message</button>
+        <p id="formResponse" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>Made by Daksh Mamnani</p></footer>
+</body>
+</html>
